@@ -1,0 +1,36 @@
+.Social {
+  display: grid;
+  width: 284px;
+  grid-template-columns: 32px 32px 32px 32px;
+  grid-template-rows: 32px 32px;
+  grid-template-areas: "wh tlg inst mail"
+                       "phone phone phone phone";
+  grid-gap: 20px 50px;
+  > a {
+    > svg {
+      width: 32px;
+      height: 32px;
+      &:nth-child(1) {
+        grid-area: wh;
+      }
+      &:nth-child(2) {
+        grid-area: tlg;
+      }
+      &:nth-child(3) {
+        grid-area: inst;
+      }
+      &:nth-child(4) {
+        grid-area: mail;
+      }
+    }
+  }
+  &__header {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+  }
+  &__footer {
+    margin: 40px auto;
+    color: #fff;
+  }
+}
