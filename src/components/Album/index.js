@@ -39,68 +39,13 @@ import image37 from '../../img/163980312_237460104766083_4405538275607137414_n.j
 import image38 from '../../img/165268164_431182637975389_7778502517809801967_n.jpg'
 import image39 from '../../img/165976422_2737844973192475_4413389226295258818_n.jpg'
 import image40 from '../../img/168570324_188503136234049_8778519021327565719_n.jpg'
+import MySlider from '../../UI/mySlider'
 
+const imagArray = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19, image20, image21, image22, image23, image24, image25, image26, image27, image28, image29, image30, image31, image32, image33, image34, image35, image36, image37, image38, image39, image40,]
 export default function Album() {
-  
   return(
-    <section className='Album'>
-      <h2>Наши работы</h2>
-      <div className='Album__wrapper'>
-        <div><img src={image1} alt='asd' /></div>
-        <div><img src={image2} alt='asd' /></div>
-        <div><img src={image3} alt='asd' /></div>
-        <div><img src={image4} alt='asd' /></div>
-        <div><img src={image5} alt='asd' /></div>
-        <div><img src={image6} alt='asd' /></div>
-        <div><img src={image7} alt='asd' /></div>
-        <div><img src={image8} alt='asd' /></div>
-        <div><img src={image9} alt='asd' /></div>
-        <div><img src={image10} alt='asd' /></div>
-        <div><img src={image11} alt='asd' /></div>
-        <div><img src={image12} alt='asd' /></div>
-        <div><img src={image13} alt='asd' /></div>
-        <div><img src={image14} alt='asd' /></div>
-        <div><img src={image15} alt='asd' /></div>
-      </div>
-      <div className='Album__wrapper'>
-        <div><img src={image16} alt='asd' /></div>
-        <div><img src={image17} alt='asd' /></div>
-        <div><img src={image18} alt='asd' /></div>
-        <div><img src={image19} alt='asd' /></div>
-        <div><img src={image20} alt='asd' /></div>
-        <div><img src={image21} alt='asd' /></div>
-        <div><img src={image22} alt='asd' /></div>
-        <div><img src={image23} alt='asd' /></div>
-        <div><img src={image24} alt='asd' /></div>
-        <div><img src={image25} alt='asd' /></div>
-        <div><img src={image26} alt='asd' /></div>
-        <div><img src={image27} alt='asd' /></div>
-        <div><img src={image28} alt='asd' /></div>
-        <div><img src={image29} alt='asd' /></div>
-        <div><img src={image30} alt='asd' /></div>
-      </div>
-      <div className='Album__wrapper'>
-        <div><img src={image30} alt='asd' /></div>
-        <div><img src={image31} alt='asd' /></div>
-        <div><img src={image32} alt='asd' /></div>
-        <div><img src={image32} alt='asd' /></div>
-        <div><img src={image33} alt='asd' /></div>
-        <div><img src={image34} alt='asd' /></div>
-        <div><img src={image35} alt='asd' /></div>
-        <div><img src={image37} alt='asd' /></div>
-        <div><img src={image36} alt='asd' /></div>
-        <div><img src={image38} alt='asd' /></div>
-        <div><img src={image39} alt='asd' /></div>
-        <div><img src={image40} alt='asd' /></div>
-      </div>
-        {/* {photos.map(photo => {
-          return(
-            <div key={photo.id}>
-              <Image src={photo.src} alt={photo.alt} width='200px' height='100px' className={styles.Carousel__img}/>
-            </div>
-          )
-        })} */}
-
+    <section>
+      <MySlider imagArray={imagArray} />
     </section>
   )
 }

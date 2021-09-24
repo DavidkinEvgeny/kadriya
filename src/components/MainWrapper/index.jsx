@@ -6,9 +6,9 @@ import './index.scss'
 export default function MainWrapper({children}) {
   return (
     <div >
-      <Header />
+      <Header myClass='header'/>
       {children}
-      <Footer />
+      <Footer myClass='footer'/>
     </div>
   )
 }

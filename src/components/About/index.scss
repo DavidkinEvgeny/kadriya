@@ -1,6 +1,21 @@
 .About {
+  width: 90%;
+  margin: 0 auto 80px;
+  text-align: justify;
   > p {
     font-size: 24px;
+    margin-bottom: 15px;
+    &:nth-child(1) {
+      font-weight: bold;
+    }
+  }
+  > ul {
+    font-size: 24px;
+    margin-bottom: 15px;
+    > li {
+      list-style: '-';
+      margin-left: 8px;
+    }
   }
 
 }

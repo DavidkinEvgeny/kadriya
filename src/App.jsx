@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Price from './pages/Price';
 import Contact from './pages/Contact';
 import MainWrapper from './components/MainWrapper';
+import Matrials from './pages/Matrials';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path='/' component={Home} exact />
           <Route path='/price' component={Price} exact />
           <Route path='/contact' component={Contact} exact />
+          <Route path='/materials' component={Matrials} exact />
         </Switch>
       </MainWrapper>
     </div>

@@ -9,4 +9,10 @@
       font-size: 24px;
     }
   }
+  @media(max-width: 768px){
+    flex-direction: column;
+    > li {
+      margin-bottom: 10px;
+    }
+  }
 }

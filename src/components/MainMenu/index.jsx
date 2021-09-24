@@ -7,6 +7,7 @@ export default function MainMenu() {
     <ul className='MainMenu'>
       <li><Link to="/">Главная</Link></li>
       <li><Link to="/price">Стоимость услуг</Link></li>
+      <li><Link to="/materials">Материалы</Link></li>
       <li><Link to="/contact">Контакты</Link></li>
     </ul>
   )

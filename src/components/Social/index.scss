@@ -7,6 +7,9 @@
                        "phone phone phone phone";
   grid-gap: 20px 50px;
   > a {
+    &:hover {
+      color: rgba(#f0f, .5);
+    }
     > svg {
       width: 32px;
       height: 32px;
@@ -32,5 +35,26 @@
   &__footer {
     margin: 40px auto;
     color: #fff;
+    
+  }
+  @media(max-width: 768px) {
+    &__header {
+      left: 240px;
+    }
+  }
+  @media(max-width: 640px) {
+    &__header {
+      left: 180px;
+    }
+  }
+  @media(max-width: 480px) {
+    &__header {
+      left: 100px;
+    }
+  }
+  @media(max-width: 320px) {
+    &__header {
+      left: 20px;
+    }
   }
 }

@@ -1,0 +1,32 @@
+.MySlider {
+    width: 100%;
+    overflow: hidden;
+    // height: 800px;
+    &__item {
+        width: 200px;
+    }
+    &__slider {
+        overflow: hidden;
+        margin: 0 auto;
+        width: 90%;
+    }
+    &__img {
+        // width: 200px;
+        max-height: 100px;
+        margin: 0 auto;
+    }
+    &__imgMax {
+        height: 600px;
+        margin: 0 auto;
+    }
+    @media(max-width: 1280px) {
+        &__imgMax {
+            height: 500px;
+        }
+    }
+    @media(max-width: 480px) {
+        &__imgMax {
+            height: 300px;
+        }
+    }
+}
