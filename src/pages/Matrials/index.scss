@@ -1,4 +1,28 @@
-// .Materials {
-//     width: 100%;
-//     overflow: hidden;
-// }
+.Materials {
+  > p {
+    font-size: 22px;
+    margin-bottom: 20px;
+    > span {
+      color: rgba(#f00, .7);
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+  }
+  &__wrapper {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      > div {
+        margin-top: 60px;
+        > img {
+        width: 600px;
+        }
+        @media(max-width: 1280px) {
+          margin-top: 40px;
+          > img {
+            width: 350px;
+          }
+        }
+      }
+    }
+}

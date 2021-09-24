@@ -3,13 +3,16 @@ import Item from '../Item';
 
 
 export default function Catalog({services, name}) {
-  const [myClass, setMyClass] =useState(['Services__list'])
+  const [myClass, setMyClass] = useState(['Services__list'])
+  const [nameBtn, setNameBtn] = useState('Подробнее')
 
   function addClass() {
     if (myClass.length === 1) {
       setMyClass(['Services__list', 'Services__list-active'])
+      setNameBtn('Скрыть')
     } else {
       setMyClass(['Services__list'])
+      setNameBtn('Подробнее')
     }
   }
   return(
@@ -22,7 +25,7 @@ export default function Catalog({services, name}) {
           </ul>
         )
       })}
-      <button className='Services__btn' onClick={() => addClass()}>Подробнее</button>
+      <button className='Services__btn' onClick={() => addClass()}>{nameBtn}</button>
     </section>
   )
 }
