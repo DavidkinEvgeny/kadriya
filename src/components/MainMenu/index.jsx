@@ -1,6 +1,6 @@
 import './index.scss'
 import {NavLink} from 'react-router-dom'
-import { AiOutlineHome, AiOutlineContacts, AiOutlineDollar } from 'react-icons/ai'
+import { AiOutlineHome, AiOutlineContacts, AiOutlineDollar, AiFillIdcard } from 'react-icons/ai'
 import { FaFlask } from 'react-icons/fa'
 
 
@@ -11,6 +11,7 @@ export default function MainMenu() {
       <li><NavLink to="/price" activeClassName="selected"><AiOutlineDollar />Стоимость услуг</NavLink></li>
       <li><NavLink to="/materials" activeClassName="selected"><FaFlask />Материалы</NavLink></li>
       <li><NavLink to="/contact" activeClassName="selected"><AiOutlineContacts />Контакты</NavLink></li>
+      <li><NavLink to="/about" activeClassName="selected"><AiFillIdcard />О нас</NavLink></li>
     </ul>
   )
 }

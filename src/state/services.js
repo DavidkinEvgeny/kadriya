@@ -98,7 +98,7 @@ export const uhod = [
 ]
 
 export const additionally = [
-  {id: 1, name: 'Укрепление фкриловой пудрой', description: 'Описание услуги', style: false, price: 300},
+  {id: 1, name: 'Укрепление акриловой пудрой', description: 'Описание услуги', style: false, price: 300},
   {id: 2, name: 'Выравнивание ногтевой пластины', description: 'Описание услуги', style: false, price: 400},
   {id: 3, name: 'Снятие гель-лака', description: 'Описание услуги', style: false, price: 30},
   {id: 4, name: 'Дизайн френч', description: 'Описание услуги', style: false, price: 500},

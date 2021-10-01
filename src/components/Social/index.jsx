@@ -11,7 +11,7 @@ export default function Social({block}) {
         <a href="https://wa.me/+79636971313" target="blank"><FaWhatsapp /></a>
         <a href="/" target="blank"><FaTelegramPlane /></a>
         <a href="https://www.instagram.com/loveis.nail/" target="blank"><FaInstagram /></a>
-        <a href="/"><FiMail /></a>
+        <a href="mailto:kadriya0709@mail.ru"><FiMail /></a>
         <Phone />
       </div>
     )

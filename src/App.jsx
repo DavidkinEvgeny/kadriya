@@ -1,10 +1,11 @@
 import './App.css';
-import {Switch, Route} from 'react-router-dom'
+import {Switch, Route, Redirect} from 'react-router-dom'
 import Home from './pages/Home';
 import Price from './pages/Price';
 import Contact from './pages/Contact';
 import MainWrapper from './components/MainWrapper';
 import Matrials from './pages/Matrials';
+import AboutPage from './pages/AboutPage/index';
 
 function App() {
   return (
@@ -12,9 +13,11 @@ function App() {
       <MainWrapper>
         <Switch>
           <Route path='/' component={Home} exact />
+          <Route path='/about' component={AboutPage} exact />
           <Route path='/price' component={Price} exact />
           <Route path='/contact' component={Contact} exact />
           <Route path='/materials' component={Matrials} exact />
+          <Redirect to='/' />
         </Switch>
       </MainWrapper>
     </div>
