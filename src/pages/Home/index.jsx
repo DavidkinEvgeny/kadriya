@@ -5,13 +5,26 @@ import Benefits from '../../components/Benefits'
 import Services from '../../components/Services'
 
 
-export default function Home() {
-  return(
-    <div>
-      <About />
-      <Benefits />
-      <Services />
-      <Album />
-    </div>
-  )
+// export default function Home() {
+//   return(
+//     <div>
+//       <About />
+//       <Benefits />
+//       <Services />
+//       <Album />
+//     </div>
+//   )
+// }
+
+export default class Home extends React.Component {
+  render() {
+    return(
+      <div>
+        <About />
+        <Benefits />
+        <Services />
+        <Album />
+      </div>
+    )
+  }
 }

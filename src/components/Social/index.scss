@@ -52,7 +52,12 @@
       left: 100px;
     }
   }
-  @media(max-width: 320px) {
+  @media(max-width: 400px) {
+    &__header {
+      left: 50px;
+    }
+  }
+  @media(max-width: 350px) {
     &__header {
       left: 20px;
     }

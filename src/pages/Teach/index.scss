@@ -1,0 +1,21 @@
+.Teach {
+  margin-bottom: 80px;
+  font-size: 22px;
+  > p {
+    margin: 15px 10px;
+    text-align: left;
+  }
+  > ul {
+    margin-top: 60px;
+    text-align: left;
+    > li {
+      margin-bottom: 20px;
+      > h3 {
+        margin-left: 10px;
+      }
+      > p {
+        margin-left: 20px;
+      }
+    }
+  }
+}
